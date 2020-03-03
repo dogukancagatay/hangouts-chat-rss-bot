@@ -28,7 +28,7 @@ This sample uses the Google Cloud Platform blog as an example.
 ## Manually run the script
 >Note that this step is required as you need to manually run the script a first time to go through the authorization process
 
-You can easily test the script by manually running the fetchNews() function from the Google Apps Script editor:
+You can easily test the script by manually running the processFeeds() function from the Google Apps Script editor:
 
 <img alt="Run" src="docs/images/run.png" height="150"/>
 
@@ -44,7 +44,7 @@ Once the script finished its execution, you should see new topics posted in your
 
 <img alt="Post" src="docs/images/post.png" width="900"/>
 
->\o/ *yay!* 
+>\o/ *yay!*
 
 ## Schedule updates
 At each run, the script will parse the RSS feed and automatically post new articles that were published since it's last execution.
@@ -55,7 +55,7 @@ To set a new trigger, click on the Triggers icon on your Google Apps Script proj
 
 <img alt="Triggers" src="docs/images/triggers.png"/>
 
-Then schedule a new Time-driven trigger to automatically execute the "fetchNews" function at a regular interval (e.g. every 10 minutes):
+Then schedule a new Time-driven trigger to automatically execute the "processFeeds" function at a regular interval (e.g. every 10 minutes):
 
 <img alt="Schedule trigger" src="docs/images/set_trigger.png" width="700"/>
 
